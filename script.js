@@ -32,10 +32,10 @@ const mainFunction = async () => {
         const jsonResponse = await response.json();
         const results = jsonResponse.results;
 
-        for (const element of results) {
-            if (searchInput.value.toLowerCase() === element.name || parseInt(searchInput.value) === element.id) {
+        for (let i = 0; results[i]; i++) {
+            if (searchInput.value.toLowerCase() === results[i].name || parseInt(searchInput.value) === results[i].id) {
                 found = true;
-                const data = await fetch(element.url);
+                const data = await fetch(results[i].url);
                 if (data.ok) {
                     const jsonData = await data.json();
                     pokemonName.innerHTML = jsonData.name.toUpperCase();
