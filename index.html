@@ -7,10 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-
-
-
+    <h1>Pokémon Search App</h1>
+    <p>Search for Pokémon Name or ID:</p>
+    <input type="text" name="pokemon" id="search-input">
+    <button id="search-button">Search</button>
+    <div id="name-id">
+        <span id="pokemon-name"></span>
+        <span id="pokemon-id"></span>
+    </div>
+    <div id="size">
+        <span id="weight"></span>
+        <span id="height"></span>
+    </div>
+    <div id="types">
+        <span class="type grass"></span>
+        <span class="type poison"></span>
+    </div>
+    <div id="stats-container"> <!-- should be flex rows-->
+        <div id="keys">
+            <p>
+                <strong>Base</strong>
+            </p>
+            <P>HP:</P>
+            <p>Attack:</p>
+            <p>Defense:</p>
+            <p>Sp. Attack:</p>
+            <p>Sp. Defense:</p>
+            <p>Speed:</p>
+        </div>
+        <div id="values">
+            <p>
+                <strong>Stats</strong>
+            </p>
+            <p id="hp"></p>
+            <p id="attack"></p>
+            <p id="defense"></p>
+            <p id="special-attack"></p>
+            <p id="special-defense"></p>
+            <p id="speed"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
