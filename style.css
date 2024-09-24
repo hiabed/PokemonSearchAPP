@@ -2,6 +2,10 @@
     margin-left: 10px;
 }
 
+#stats {
+    font-weight: bold;
+}
+
 #types {
     display: flex;
     gap: 20px;
@@ -19,7 +23,7 @@
     background-color: gray;
 }
 
-#pokemon-img {
+#sprite {
     align-self: center;
     width: 180px;
     height: 180px;
